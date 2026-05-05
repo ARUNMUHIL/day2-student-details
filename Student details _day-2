@@ -1,0 +1,22 @@
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+
+maths = int(input("Enter your maths mark: "))
+physics = int(input("Enter your physics mark: "))
+chemistry = int(input("Enter your chemistry mark: "))
+
+total = maths + physics + chemistry
+average = total / 3
+
+print("\n>>> Student Details <<<")
+print("Student Name:", name)
+print("Student Age:", age)
+print("Total Marks:", total)
+print("Average Mark:", round(average, 2))
+
+if average >= 85:
+    print("Congratulations! You got A+ rank")
+elif average >= 60:
+    print("Good! You got B rank")
+else:
+    print("You got C rank")
